@@ -1,4 +1,4 @@
-package my.project.runningapp
+package my.project.runningapp.di
 
 import android.content.Context
 import androidx.room.Room

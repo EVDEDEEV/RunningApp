@@ -7,25 +7,25 @@ import androidx.room.*
 interface RunDAO {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertRun(run: Run)
+    suspend fun insertRunEntity(runEntity: RunEntity)
 
     @Delete
-    suspend fun deleteRun(run: Run)
+    suspend fun deleteRunEntity(runEntity: RunEntity)
 
     @Query("SELECT * FROM running_table ORDER BY timeInMillis DESC")
-    fun getAllRunsSortedByDate(): LiveData<List<Run>>
+    fun getAllRunsSortedByDate(): LiveData<List<RunEntity>>
 
     @Query("SELECT * FROM running_table ORDER BY timestamp DESC")
-    fun getAllRunsSortedByTimeInMillis(): LiveData<List<Run>>
+    fun getAllRunsSortedByTimeInMillis(): LiveData<List<RunEntity>>
 
     @Query("SELECT * FROM running_table ORDER BY caloriesBurned DESC")
-    fun getAllRunsSortedByCaloriesBurned(): LiveData<List<Run>>
+    fun getAllRunsSortedByCaloriesBurned(): LiveData<List<RunEntity>>
 
     @Query("SELECT * FROM running_table ORDER BY avgSpeedInKMH DESC")
-    fun getAllRunsSortedByAvgSpeed(): LiveData<List<Run>>
+    fun getAllRunsSortedByAvgSpeed(): LiveData<List<RunEntity>>
 
     @Query("SELECT * FROM running_table ORDER BY distanceInMeters DESC")
-    fun getAllRunsSortedByDistance(): LiveData<List<Run>>
+    fun getAllRunsSortedByDistance(): LiveData<List<RunEntity>>
 
     //get Total value functions
 
@@ -33,7 +33,7 @@ interface RunDAO {
     fun getTotalTimeInMillis(): LiveData<Long>
 
     @Query("SELECT SUM(caloriesBurned) FROM running_table")
-    fun getTotalCalories(): LiveData<Int>
+    fun getTotalCaloriesBurned(): LiveData<Int>
 
     @Query("SELECT SUM(distanceInMeters) FROM running_table")
     fun getTotalDistance(): LiveData<Int>

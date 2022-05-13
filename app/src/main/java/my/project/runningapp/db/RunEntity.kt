@@ -5,7 +5,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "running_table")
-data class Run(
+data class RunEntity(
     var img: Bitmap? = null,
     var timestamp: Long = 0L,
     var avgSpeedInKMH: Float = 0f,
