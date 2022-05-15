@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">Running App</string>
     <string name="google_maps_key">AIzaSyCC4hbyJ5kj56tLBLxOecTfktQfoHyMBZ4</string>
+
+    <string-array name="filter_options">
+        <item>Date</item>
+        <item>Running Time</item>
+        <item>Distance</item>
+        <item>Average Speed</item>
+        <item>Calories Burned</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
