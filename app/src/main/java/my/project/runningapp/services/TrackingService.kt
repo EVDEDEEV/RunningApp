@@ -9,7 +9,6 @@ import timber.log.Timber
 
 class TrackingService : LifecycleService() {
 
-
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
 
         intent?.let {
