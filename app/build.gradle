@@ -14,7 +14,7 @@ android {
     defaultConfig {
         applicationId "my.project.runningapp"
         minSdk 21
-        targetSdk 32
+        targetSdk 29
         versionCode 1
         versionName "1.0"
 
@@ -76,6 +76,8 @@ dependencies {
     kapt 'com.github.bumptech.glide:compiler:4.11.0'
 
     // Google Maps Location Services
+//    implementation 'com.google.android.gms:play-services-location:17.0.0'
+//    implementation 'com.google.android.gms:play-services-maps:17.0.0'
     implementation 'com.google.android.gms:play-services-location:19.0.1'
     implementation 'com.google.android.gms:play-services-maps:18.0.2'
 
