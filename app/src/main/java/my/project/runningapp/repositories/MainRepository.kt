@@ -1,15 +1,15 @@
 package my.project.runningapp.repositories
 
+import my.project.runningapp.db.Run
 import my.project.runningapp.db.RunDAO
-import my.project.runningapp.db.RunEntity
 import javax.inject.Inject
 
 class MainRepository @Inject constructor(
     private val runDAO: RunDAO,
 ) {
-    suspend fun insertRunEntity(runEntity: RunEntity) = runDAO.insertRunEntity(runEntity)
+    suspend fun insertRunEntity(run: Run) = runDAO.insertRunEntity(run)
 
-    suspend fun deleteRunEntity(runEntity: RunEntity) = runDAO.deleteRunEntity(runEntity)
+    suspend fun deleteRunEntity(run: Run) = runDAO.deleteRunEntity(run)
 
     fun getAllRunsSortedByDate() = runDAO.getAllRunsSortedByDate()
 

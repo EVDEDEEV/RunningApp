@@ -1,7 +1,10 @@
 package my.project.runningapp.ui.viewmodels
 
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.launch
+import my.project.runningapp.db.Run
 import my.project.runningapp.repositories.MainRepository
 import javax.inject.Inject
 
@@ -10,5 +13,8 @@ class MainViewModel @Inject constructor(
     val mainRepository: MainRepository,
 ) : ViewModel() {
 
+    fun insertRun(run: Run) = viewModelScope.launch {
+        mainRepository.insertRunEntity(run)
+    }
 
 }

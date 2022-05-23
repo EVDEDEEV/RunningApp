@@ -5,7 +5,7 @@ import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 
 @Database(
-    entities = [RunEntity::class],
+    entities = [Run::class],
     version = 1,
     exportSchema = false
 )
