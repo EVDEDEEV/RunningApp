@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android Projects/RunningApp/app/src/main/res/drawable/bottom_nav_selector.xml" value="0.1" />
+        <entry key="..\:/Android Projects/RunningApp/app/src/main/res/drawable/ic_graph.xml" value="0.1665" />
         <entry key="..\:/Android Projects/RunningApp/app/src/main/res/layout-land/fragment_statistics.xml" value="0.27291666666666664" />
         <entry key="..\:/Android Projects/RunningApp/app/src/main/res/layout-land/fragment_tracking.xml" value="0.27291666666666664" />
         <entry key="..\:/Android Projects/RunningApp/app/src/main/res/layout/activity_main.xml" value="0.14351851851851852" />

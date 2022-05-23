@@ -28,6 +28,7 @@ import my.project.runningapp.services.Polyline
 import my.project.runningapp.services.TrackingService
 import my.project.runningapp.ui.viewmodels.MainViewModel
 import java.util.*
+import javax.inject.Inject
 import kotlin.math.round
 
 @AndroidEntryPoint
@@ -44,7 +45,8 @@ class TrackingFragment : Fragment(R.layout.fragment_tracking) {
 
     private var menu: Menu? = null
 
-    private var weight = 80f
+    @set: Inject
+    var weight = 80f
 
     override fun onCreateView(
         inflater: LayoutInflater,
