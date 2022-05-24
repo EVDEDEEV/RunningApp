@@ -24,4 +24,6 @@ Just a simple run tracking app
 
 
 <h3>Screenshots:</h3>
+![image](https://user-images.githubusercontent.com/94930087/170109133-dfd99174-8d85-4921-aecc-4517b808ce96.png)
+
 
