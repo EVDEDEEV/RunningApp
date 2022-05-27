@@ -26,7 +26,6 @@ object ServiceModule {
         @ApplicationContext app: Context,
     ) = FusedLocationProviderClient(app)
 
-
     @ServiceScoped
     @Provides
     fun provideMainActivityPendingIntent(

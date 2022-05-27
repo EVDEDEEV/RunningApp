@@ -64,7 +64,7 @@ class TrackingService : LifecycleService() {
     companion object {
         val timeRunInMillis = MutableLiveData<Long>()
         val isTracking = MutableLiveData<Boolean>()
-        val pathPoints = MutableLiveData<MutableList<MutableList<LatLng>>>()
+        val pathPoints = MutableLiveData<Polylines>()
 
     }
 
